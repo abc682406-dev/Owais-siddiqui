@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owais Siddiqui - Frontend, WordPress & AI Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.9);
+            z-index: 1000;
+            padding: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD43B;
+        }
+        section {
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        #home {
+            background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+            text-align: center;
+        }
+        #home h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #FFD43B;
+            margin-bottom: 20px;
+        }
+        #home p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .btn {
+            background-color: #FFD43B;
+            color: #121212;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #FFC107;
+            transform: scale(1.05);
+        }
+        #about, #skills, #services, #contact {
+            background-color: #121212;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #FFD43B;
+            text-align: center;
+        }
+        #about p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+        }
+        #skills li {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #skills li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 212, 59, 0.2);
+        }
+        #experience {
+            text-align: center;
+            margin: 40px 0;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #experience h3 {
+            font-size: 1.5rem;
+            color: #FFD43B;
+            margin-bottom: 15px;
+        }
+        #services .service {
+            background-color: #1a1a1a;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #services .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 212, 59, 0.2);
+        }
+        #contact {
+            text-align: center;
+        }
+        #contact p {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            #home h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #skills ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>I’m Owais — Frontend, WordPress & AI Developer</h1>
+            <p>Based in Quaidabad, Karachi, Pakistan</p>
+            <a href="#contact" class="btn">Let’s Work Together</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hey there! I’m Owais Siddiqui, a creative Frontend & WordPress Developer who transforms ideas into beautiful, functional digital experiences.<br><br>From crafting fast and responsive websites to integrating smart AI-powered features, I focus on building projects that are both visually stunning and technically strong.<br><br>Alongside my development work, I enjoy exploring the world of AI, automation, and design — using technology to make work faster, smarter, and more creative.<br><br>I believe in teamwork, clear communication, and continuous learning. For me, every project is a new opportunity to grow, innovate, and deliver something meaningful. 🚀</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                <li><strong>WordPress Development:</strong> Custom themes, plugins, landing pages, blogs, eCommerce</li>
+                <li><strong>AI & Automation:</strong> Chatbot development for businesses, AI-based presentations, text-to-image generation, and expert prompt writing</li>
+                <li><strong>Office & Productivity Tools:</strong> MS Word, Excel, PowerPoint, Word to PDF conversion, Data Entry, Fast Typing Work</li>
+                <li><strong>Graphic Design:</strong> Skilled in Canva, Adobe Photoshop, and Adobe Illustrator for logo design, posters, banners, and social media visuals</li>
+                <li><strong>Soft Skills:</strong> Communication, Collaboration, Presentation, Teamwork, Creative Thinking</li>
+            </ul>
+            <div id="experience">
+                <h3>Experience Summary</h3>
+                <p>Practical experience in developing real-world projects, managing websites for clients, and collaborating on AI and web-based tools. Skilled at combining design with technology to create efficient and impactful digital solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service">
+                <h3>Frontend Web Development</h3>
+                <p>Responsive and modern websites using HTML, CSS, JavaScript, and Bootstrap.</p>
+            </div>
+            <div class="service">
+                <h3>WordPress Development</h3>
+                <p>Custom themes, plugin setup, and complete website building (portfolio, blog, business, eCommerce).</p>
+            </div>
+            <div class="service">
+                <h3>AI Automation & Chatbots</h3>
+                <p>Building AI chatbots and automation systems for businesses to improve customer experience.</p>
+            </div>
+            <div class="service">
+                <h3>AI Presentations & Tools</h3>
+                <p>Creating AI-generated presentations and text-to-image visual content.</p>
+            </div>
+            <div class="service">
+                <h3>Prompt Engineering</h3>
+                <p>Writing optimized, professional prompts for ChatGPT, Midjourney, and other AI tools.</p>
+            </div>
+            <div class="service">
+                <h3>Data Entry & Office Work</h3>
+                <p>Fast and accurate data entry, Word to PDF conversion, Excel sheet organization, and typing tasks.</p>
+            </div>
+            <div class="service">
+                <h3>Graphic Design</h3>
+                <p>Creating logos, posters, thumbnails, and social media designs using Canva, Photoshop, and Illustrator.</p>
+            </div>
+            <div class="service">
+                <h3>Collaboration & Team Projects</h3>
+                <p>Working efficiently with clients or teams using clear communication and creativity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Location: Quaidabad, Karachi, Pakistan</p>
+            <p>Contact Number: 0311-1235883</p>
+            <p>Email: <a href="mailto:owais.siddiqui91007@gmail.com" style="color: #FFD43B;">owais.siddiqui91007@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Owais Siddiqui | Contact: 0311-1235883 | Email: owais.siddiqui91007@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
